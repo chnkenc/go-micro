@@ -5,12 +5,12 @@ import (
 	"context"
 	"time"
 
-	"github.com/micro/go-micro/v2/client"
-	"github.com/micro/go-micro/v2/debug/log"
-	proto "github.com/micro/go-micro/v2/debug/service/proto"
-	"github.com/micro/go-micro/v2/debug/stats"
-	"github.com/micro/go-micro/v2/debug/trace"
-	"github.com/micro/go-micro/v2/server"
+	"github.com/chnkenc/go-micro/client"
+	"github.com/chnkenc/go-micro/debug/log"
+	proto "github.com/chnkenc/go-micro/debug/service/proto"
+	"github.com/chnkenc/go-micro/debug/stats"
+	"github.com/chnkenc/go-micro/debug/trace"
+	"github.com/chnkenc/go-micro/server"
 )
 
 // NewHandler returns an instance of the Debug Handler

@@ -5,7 +5,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/micro/go-micro/v2/registry"
+	"github.com/chnkenc/go-micro/registry"
 	clientv3 "go.etcd.io/etcd/client/v3"
 )
 

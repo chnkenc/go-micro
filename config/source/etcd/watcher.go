@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/micro/go-micro/v2/config/source"
+	"github.com/chnkenc/go-micro/config/source"
 	cetcd "go.etcd.io/etcd/client/v3"
 )
 

@@ -6,7 +6,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/micro/go-micro/v2/config/source"
+	"github.com/chnkenc/go-micro/config/source"
 	"go.etcd.io/etcd/api/v3/mvccpb"
 	cetcd "go.etcd.io/etcd/client/v3"
 )

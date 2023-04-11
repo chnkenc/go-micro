@@ -6,12 +6,12 @@ import (
 	"net/http"
 	"time"
 
+	"github.com/chnkenc/go-micro"
+	"github.com/chnkenc/go-micro/registry"
 	"github.com/micro/cli/v2"
-	"github.com/micro/go-micro/v2"
-	"github.com/micro/go-micro/v2/registry"
 )
 
-//Options for web
+// Options for web
 type Options struct {
 	Name      string
 	Version   string
@@ -93,7 +93,7 @@ func Icon(ico string) Option {
 	}
 }
 
-//Id for Unique server id
+// Id for Unique server id
 func Id(id string) Option {
 	return func(o *Options) {
 		o.Id = id
@@ -121,7 +121,7 @@ func Address(a string) Option {
 	}
 }
 
-//Advertise The address to advertise for discovery - host:port
+// Advertise The address to advertise for discovery - host:port
 func Advertise(a string) Option {
 	return func(o *Options) {
 		o.Advertise = a
@@ -144,28 +144,28 @@ func Registry(r registry.Registry) Option {
 	}
 }
 
-//RegisterTTL Register the service with a TTL
+// RegisterTTL Register the service with a TTL
 func RegisterTTL(t time.Duration) Option {
 	return func(o *Options) {
 		o.RegisterTTL = t
 	}
 }
 
-//RegisterInterval Register the service with at interval
+// RegisterInterval Register the service with at interval
 func RegisterInterval(t time.Duration) Option {
 	return func(o *Options) {
 		o.RegisterInterval = t
 	}
 }
 
-//Handler for custom handler
+// Handler for custom handler
 func Handler(h http.Handler) Option {
 	return func(o *Options) {
 		o.Handler = h
 	}
 }
 
-//Server for custom Server
+// Server for custom Server
 func Server(srv *http.Server) Option {
 	return func(o *Options) {
 		o.Server = srv

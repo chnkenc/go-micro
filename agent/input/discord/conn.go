@@ -6,8 +6,8 @@ import (
 	"sync"
 
 	"github.com/bwmarrin/discordgo"
-	"github.com/micro/go-micro/v2/agent/input"
-	"github.com/micro/go-micro/v2/logger"
+	"github.com/chnkenc/go-micro/agent/input"
+	"github.com/chnkenc/go-micro/logger"
 )
 
 type discordConn struct {

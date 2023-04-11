@@ -4,11 +4,11 @@ import (
 	"errors"
 	"time"
 
+	"github.com/chnkenc/go-micro/config/encoder"
+	"github.com/chnkenc/go-micro/config/encoder/json"
+	"github.com/chnkenc/go-micro/config/reader"
+	"github.com/chnkenc/go-micro/config/source"
 	"github.com/imdario/mergo"
-	"github.com/micro/go-micro/v2/config/encoder"
-	"github.com/micro/go-micro/v2/config/encoder/json"
-	"github.com/micro/go-micro/v2/config/reader"
-	"github.com/micro/go-micro/v2/config/source"
 )
 
 type jsonReader struct {

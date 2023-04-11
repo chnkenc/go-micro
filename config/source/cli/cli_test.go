@@ -5,11 +5,11 @@ import (
 	"os"
 	"testing"
 
+	"github.com/chnkenc/go-micro"
+	"github.com/chnkenc/go-micro/config"
+	"github.com/chnkenc/go-micro/config/cmd"
+	"github.com/chnkenc/go-micro/config/source"
 	"github.com/micro/cli/v2"
-	"github.com/micro/go-micro/v2"
-	"github.com/micro/go-micro/v2/config"
-	"github.com/micro/go-micro/v2/config/cmd"
-	"github.com/micro/go-micro/v2/config/source"
 )
 
 func TestCliSourceDefault(t *testing.T) {

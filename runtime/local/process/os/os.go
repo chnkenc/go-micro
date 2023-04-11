@@ -1,3 +1,4 @@
+//go:build !windows
 // +build !windows
 
 // Package os runs processes locally
@@ -10,7 +11,7 @@ import (
 	"strconv"
 	"syscall"
 
-	"github.com/micro/go-micro/v2/runtime/local/process"
+	"github.com/chnkenc/go-micro/runtime/local/process"
 )
 
 func (p *Process) Exec(exe *process.Executable) error {

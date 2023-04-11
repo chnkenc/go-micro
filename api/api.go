@@ -5,8 +5,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/micro/go-micro/v2/registry"
-	"github.com/micro/go-micro/v2/server"
+	"github.com/chnkenc/go-micro/registry"
+	"github.com/chnkenc/go-micro/server"
 )
 
 type Api interface {
@@ -176,7 +176,7 @@ func NewGateway() Gateway {
 //
 // Usage:
 //
-// 	proto.RegisterHandler(service.Server(), new(Handler), api.WithEndpoint(
+//	proto.RegisterHandler(service.Server(), new(Handler), api.WithEndpoint(
 //		&api.Endpoint{
 //			Name: "Greeter.Hello",
 //			Path: []string{"/greeter"},

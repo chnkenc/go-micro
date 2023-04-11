@@ -15,9 +15,9 @@ import (
 	"sync"
 	"time"
 
+	"github.com/chnkenc/go-micro/logger"
+	"github.com/chnkenc/go-micro/util/mdns"
 	"github.com/google/uuid"
-	"github.com/micro/go-micro/v2/logger"
-	"github.com/micro/go-micro/v2/util/mdns"
 )
 
 var (

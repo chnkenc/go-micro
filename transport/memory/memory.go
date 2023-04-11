@@ -10,9 +10,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/micro/go-micro/v2/transport"
-	maddr "github.com/micro/go-micro/v2/util/addr"
-	mnet "github.com/micro/go-micro/v2/util/net"
+	"github.com/chnkenc/go-micro/transport"
+	maddr "github.com/chnkenc/go-micro/util/addr"
+	mnet "github.com/chnkenc/go-micro/util/net"
 )
 
 type memorySocket struct {

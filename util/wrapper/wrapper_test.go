@@ -7,11 +7,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/micro/go-micro/v2/auth"
-	"github.com/micro/go-micro/v2/client"
-	"github.com/micro/go-micro/v2/errors"
-	"github.com/micro/go-micro/v2/metadata"
-	"github.com/micro/go-micro/v2/server"
+	"github.com/chnkenc/go-micro/auth"
+	"github.com/chnkenc/go-micro/client"
+	"github.com/chnkenc/go-micro/errors"
+	"github.com/chnkenc/go-micro/metadata"
+	"github.com/chnkenc/go-micro/server"
 )
 
 func TestWrapper(t *testing.T) {

@@ -11,13 +11,13 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/micro/go-micro/v2/broker"
-	"github.com/micro/go-micro/v2/client"
-	"github.com/micro/go-micro/v2/client/selector"
-	"github.com/micro/go-micro/v2/config/cmd"
-	"github.com/micro/go-micro/v2/registry"
-	"github.com/micro/go-micro/v2/server"
-	"github.com/micro/go-micro/v2/transport"
+	"github.com/chnkenc/go-micro/broker"
+	"github.com/chnkenc/go-micro/client"
+	"github.com/chnkenc/go-micro/client/selector"
+	"github.com/chnkenc/go-micro/config/cmd"
+	"github.com/chnkenc/go-micro/registry"
+	"github.com/chnkenc/go-micro/server"
+	"github.com/chnkenc/go-micro/transport"
 )
 
 type plugin struct{}

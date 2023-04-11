@@ -8,10 +8,10 @@ import (
 	"os"
 	"sync"
 
+	"github.com/chnkenc/go-micro/api/server"
+	"github.com/chnkenc/go-micro/api/server/cors"
+	"github.com/chnkenc/go-micro/logger"
 	"github.com/gorilla/handlers"
-	"github.com/micro/go-micro/v2/api/server"
-	"github.com/micro/go-micro/v2/api/server/cors"
-	"github.com/micro/go-micro/v2/logger"
 )
 
 type httpServer struct {

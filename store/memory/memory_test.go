@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/chnkenc/go-micro/store"
 	"github.com/kr/pretty"
-	"github.com/micro/go-micro/v2/store"
 )
 
 func TestMemoryReInit(t *testing.T) {

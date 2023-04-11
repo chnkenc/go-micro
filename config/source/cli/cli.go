@@ -7,10 +7,10 @@ import (
 	"strings"
 	"time"
 
+	"github.com/chnkenc/go-micro/config/cmd"
+	"github.com/chnkenc/go-micro/config/source"
 	"github.com/imdario/mergo"
 	"github.com/micro/cli/v2"
-	"github.com/micro/go-micro/v2/config/cmd"
-	"github.com/micro/go-micro/v2/config/source"
 )
 
 type cliSource struct {
@@ -89,14 +89,15 @@ func (c *cliSource) String() string {
 // command line flags have already been parsed.
 //
 // Example:
-//      cli.StringFlag{Name: "db-host"},
+//
+//	cli.StringFlag{Name: "db-host"},
 //
 //
-//      {
-//          "database": {
-//              "host": "localhost"
-//          }
-//      }
+//	{
+//	    "database": {
+//	        "host": "localhost"
+//	    }
+//	}
 func NewSource(opts ...source.Option) source.Source {
 	options := source.NewOptions(opts...)
 

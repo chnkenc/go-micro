@@ -7,11 +7,11 @@ import (
 	"os/signal"
 	"time"
 
+	"github.com/chnkenc/go-micro/codec"
+	"github.com/chnkenc/go-micro/logger"
+	"github.com/chnkenc/go-micro/registry"
+	signalutil "github.com/chnkenc/go-micro/util/signal"
 	"github.com/google/uuid"
-	"github.com/micro/go-micro/v2/codec"
-	"github.com/micro/go-micro/v2/logger"
-	"github.com/micro/go-micro/v2/registry"
-	signalutil "github.com/micro/go-micro/v2/util/signal"
 )
 
 // Server is a simple micro server abstraction
@@ -111,12 +111,11 @@ type Stream interface {
 //
 // Example:
 //
-//      type Greeter struct {}
+//	type Greeter struct {}
 //
-//      func (g *Greeter) Hello(context, request, response) error {
-//              return nil
-//      }
-//
+//	func (g *Greeter) Hello(context, request, response) error {
+//	        return nil
+//	}
 type Handler interface {
 	Name() string
 	Handler() interface{}
@@ -185,7 +184,6 @@ func NewSubscriber(topic string, h interface{}, opts ...SubscriberOption) Subscr
 //	func (f *Foo) Bar(ctx, req, rsp) error {
 //		return nil
 //	}
-//
 func NewHandler(h interface{}, opts ...HandlerOption) Handler {
 	return DefaultServer.NewHandler(h, opts...)
 }

@@ -1,4 +1,4 @@
-module github.com/micro/go-micro/v2
+module github.com/chnkenc/go-micro
 
 go 1.15
 

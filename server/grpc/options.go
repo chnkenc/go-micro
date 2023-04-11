@@ -5,12 +5,12 @@ import (
 	"crypto/tls"
 	"net"
 
-	"github.com/micro/go-micro/v2/auth"
-	"github.com/micro/go-micro/v2/broker"
-	"github.com/micro/go-micro/v2/codec"
-	"github.com/micro/go-micro/v2/registry"
-	"github.com/micro/go-micro/v2/server"
-	"github.com/micro/go-micro/v2/transport"
+	"github.com/chnkenc/go-micro/auth"
+	"github.com/chnkenc/go-micro/broker"
+	"github.com/chnkenc/go-micro/codec"
+	"github.com/chnkenc/go-micro/registry"
+	"github.com/chnkenc/go-micro/server"
+	"github.com/chnkenc/go-micro/transport"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/encoding"
 )
@@ -57,10 +57,8 @@ func Options(opts ...grpc.ServerOption) server.Option {
 	return setServerOption(grpcOptions{}, opts)
 }
 
-//
 // MaxMsgSize set the maximum message in bytes the server can receive and
 // send.  Default maximum message size is 4 MB.
-//
 func MaxMsgSize(s int) server.Option {
 	return setServerOption(maxMsgSizeKey{}, s)
 }

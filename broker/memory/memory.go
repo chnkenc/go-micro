@@ -8,11 +8,11 @@ import (
 	"sync"
 	"time"
 
+	"github.com/chnkenc/go-micro/broker"
+	"github.com/chnkenc/go-micro/logger"
+	maddr "github.com/chnkenc/go-micro/util/addr"
+	mnet "github.com/chnkenc/go-micro/util/net"
 	"github.com/google/uuid"
-	"github.com/micro/go-micro/v2/broker"
-	"github.com/micro/go-micro/v2/logger"
-	maddr "github.com/micro/go-micro/v2/util/addr"
-	mnet "github.com/micro/go-micro/v2/util/net"
 )
 
 type memoryBroker struct {

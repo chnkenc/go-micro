@@ -1,7 +1,7 @@
 package service
 
 import (
-	"github.com/micro/go-micro/v2/debug/log"
+	"github.com/chnkenc/go-micro/debug/log"
 )
 
 type logStream struct {

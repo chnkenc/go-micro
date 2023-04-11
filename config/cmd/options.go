@@ -3,18 +3,18 @@ package cmd
 import (
 	"context"
 
-	"github.com/micro/go-micro/v2/auth"
-	"github.com/micro/go-micro/v2/broker"
-	"github.com/micro/go-micro/v2/client"
-	"github.com/micro/go-micro/v2/client/selector"
-	"github.com/micro/go-micro/v2/config"
-	"github.com/micro/go-micro/v2/debug/profile"
-	"github.com/micro/go-micro/v2/debug/trace"
-	"github.com/micro/go-micro/v2/registry"
-	"github.com/micro/go-micro/v2/runtime"
-	"github.com/micro/go-micro/v2/server"
-	"github.com/micro/go-micro/v2/store"
-	"github.com/micro/go-micro/v2/transport"
+	"github.com/chnkenc/go-micro/auth"
+	"github.com/chnkenc/go-micro/broker"
+	"github.com/chnkenc/go-micro/client"
+	"github.com/chnkenc/go-micro/client/selector"
+	"github.com/chnkenc/go-micro/config"
+	"github.com/chnkenc/go-micro/debug/profile"
+	"github.com/chnkenc/go-micro/debug/trace"
+	"github.com/chnkenc/go-micro/registry"
+	"github.com/chnkenc/go-micro/runtime"
+	"github.com/chnkenc/go-micro/server"
+	"github.com/chnkenc/go-micro/store"
+	"github.com/chnkenc/go-micro/transport"
 )
 
 type Options struct {

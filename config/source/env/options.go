@@ -5,7 +5,7 @@ import (
 
 	"strings"
 
-	"github.com/micro/go-micro/v2/config/source"
+	"github.com/chnkenc/go-micro/config/source"
 )
 
 type strippedPrefixKey struct{}

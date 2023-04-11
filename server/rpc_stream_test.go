@@ -9,9 +9,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/chnkenc/go-micro/codec/json"
+	protoCodec "github.com/chnkenc/go-micro/codec/proto"
 	"github.com/golang/protobuf/proto"
-	"github.com/micro/go-micro/v2/codec/json"
-	protoCodec "github.com/micro/go-micro/v2/codec/proto"
 )
 
 // protoStruct implements proto.Message

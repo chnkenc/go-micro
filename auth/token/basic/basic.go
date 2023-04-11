@@ -5,10 +5,10 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/chnkenc/go-micro/auth"
+	"github.com/chnkenc/go-micro/auth/token"
+	"github.com/chnkenc/go-micro/store"
 	"github.com/google/uuid"
-	"github.com/micro/go-micro/v2/auth"
-	"github.com/micro/go-micro/v2/auth/token"
-	"github.com/micro/go-micro/v2/store"
 )
 
 // Basic implementation of token provider, backed by the store

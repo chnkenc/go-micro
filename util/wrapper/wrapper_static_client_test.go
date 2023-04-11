@@ -4,13 +4,13 @@ import (
 	"context"
 	"testing"
 
-	"github.com/micro/go-micro/v2/broker"
-	bmemory "github.com/micro/go-micro/v2/broker/memory"
-	"github.com/micro/go-micro/v2/client"
-	rmemory "github.com/micro/go-micro/v2/registry/memory"
-	"github.com/micro/go-micro/v2/server"
-	tmemory "github.com/micro/go-micro/v2/transport/memory"
-	wrapper "github.com/micro/go-micro/v2/util/wrapper"
+	"github.com/chnkenc/go-micro/broker"
+	bmemory "github.com/chnkenc/go-micro/broker/memory"
+	"github.com/chnkenc/go-micro/client"
+	rmemory "github.com/chnkenc/go-micro/registry/memory"
+	"github.com/chnkenc/go-micro/server"
+	tmemory "github.com/chnkenc/go-micro/transport/memory"
+	wrapper "github.com/chnkenc/go-micro/util/wrapper"
 )
 
 type TestFoo struct {

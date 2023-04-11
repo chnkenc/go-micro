@@ -1,13 +1,13 @@
 package network
 
 import (
+	"github.com/chnkenc/go-micro/network/resolver"
+	"github.com/chnkenc/go-micro/network/resolver/registry"
+	"github.com/chnkenc/go-micro/proxy"
+	"github.com/chnkenc/go-micro/proxy/mucp"
+	"github.com/chnkenc/go-micro/router"
+	"github.com/chnkenc/go-micro/tunnel"
 	"github.com/google/uuid"
-	"github.com/micro/go-micro/v2/network/resolver"
-	"github.com/micro/go-micro/v2/network/resolver/registry"
-	"github.com/micro/go-micro/v2/proxy"
-	"github.com/micro/go-micro/v2/proxy/mucp"
-	"github.com/micro/go-micro/v2/router"
-	"github.com/micro/go-micro/v2/tunnel"
 )
 
 type Option func(*Options)

@@ -12,17 +12,17 @@ import (
 	"sync"
 	"time"
 
-	"github.com/micro/go-micro/v2/broker"
-	"github.com/micro/go-micro/v2/codec"
-	raw "github.com/micro/go-micro/v2/codec/bytes"
-	"github.com/micro/go-micro/v2/logger"
-	"github.com/micro/go-micro/v2/metadata"
-	"github.com/micro/go-micro/v2/registry"
-	"github.com/micro/go-micro/v2/transport"
-	"github.com/micro/go-micro/v2/util/addr"
-	"github.com/micro/go-micro/v2/util/backoff"
-	mnet "github.com/micro/go-micro/v2/util/net"
-	"github.com/micro/go-micro/v2/util/socket"
+	"github.com/chnkenc/go-micro/broker"
+	"github.com/chnkenc/go-micro/codec"
+	raw "github.com/chnkenc/go-micro/codec/bytes"
+	"github.com/chnkenc/go-micro/logger"
+	"github.com/chnkenc/go-micro/metadata"
+	"github.com/chnkenc/go-micro/registry"
+	"github.com/chnkenc/go-micro/transport"
+	"github.com/chnkenc/go-micro/util/addr"
+	"github.com/chnkenc/go-micro/util/backoff"
+	mnet "github.com/chnkenc/go-micro/util/net"
+	"github.com/chnkenc/go-micro/util/socket"
 )
 
 type rpcServer struct {
