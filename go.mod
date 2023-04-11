@@ -55,7 +55,7 @@ require (
 	golang.org/x/net v0.8.0
 	google.golang.org/genproto v0.0.0-20230306155012-7f2fa6fef1f4
 	google.golang.org/grpc v1.53.0
-	google.golang.org/grpc/examples v0.0.0-20230410210817-efb2f45956fe
+	google.golang.org/grpc/examples v0.0.0-20230411165109-8374ff8fbdbb
 	google.golang.org/protobuf v1.30.0
 	gopkg.in/telegram-bot-api.v4 v4.6.4
 )
